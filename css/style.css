@@ -412,6 +412,9 @@ header {
       font-size: 25px;
       padding: 40px 0 30px 0;
       color: white; }
+      @media only screen and (min-width: 376px) and (max-width: 768px) {
+        header .navbar a.navbar-brand {
+          padding: 56px 15px 30px 25px; } }
 
 section.header-title {
   margin-top: -20px;
@@ -524,6 +527,10 @@ section.featured {
       section.featured .submit {
         display: block;
         text-align: center; } }
+    @media only screen and (min-width: 376px) and (max-width: 768px) {
+      section.featured .submit {
+        display: block;
+        text-align: center; } }
     section.featured .submit p {
       color: white;
       font-size: 20px; }
@@ -552,6 +559,9 @@ section.featured {
       section.featured .hov {
         margin-top: 0px; } }
     @media only screen and (min-width: 321px) and (max-width: 375px) {
+      section.featured .hov {
+        margin-top: 0px; } }
+    @media only screen and (min-width: 376px) and (max-width: 768px) {
       section.featured .hov {
         margin-top: 0px; } }
     section.featured .hov:after {
@@ -617,6 +627,9 @@ section.services {
       section.services .services-flex {
         display: block; } }
     @media only screen and (min-width: 321px) and (max-width: 375px) {
+      section.services .services-flex {
+        display: block; } }
+    @media only screen and (min-width: 376px) and (max-width: 768px) {
       section.services .services-flex {
         display: block; } }
     section.services .services-flex img.services-icon {
