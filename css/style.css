@@ -1196,7 +1196,7 @@ footer {
     margin-top: 40px; }
     footer ul li {
       display: inline-block;
-      margin-right: 10px;
+      margin: 5px;
       width: 30px;
       height: 30px;
       color: white;
