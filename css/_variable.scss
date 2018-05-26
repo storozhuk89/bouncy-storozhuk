@@ -1,0 +1,28 @@
+$logo-font: 'Carribeans_Treasure';
+$font-h: 'OpenSansSemiBold';
+$font-regular: 'OpenSansRegular';
+$font-content: 'OpenSansLight';
+
+$extrasmall:320px;
+$small: 375px;
+$medium:768px;
+$large: 1024px;
+
+@mixin media($media) {
+  @if $media == miniphone {
+    @media only screen and (max-width: $extrasmall) { @content; }
+  }
+  @else if $media == phone {
+    @media only screen and (min-width: $extrasmall + 1) and (max-width: $small) { @content; }
+  }
+  @else if $media == tablet-v {
+    @media only screen and (min-width: $small + 1) and (max-width: $medium) { @content; }
+  }
+  @else if $media == tablet-h {
+    @media only screen and (min-width: $medium + 1) and (max-width: $large) { @content; }
+  }
+  @else if $media == desctop {
+    @media only screen and (min-width: $large) { @content; }
+  }
+}
+
